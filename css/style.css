@@ -1,0 +1,302 @@
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  font-family: 'Fira Sans', sans-serif;
+  color: #212121;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.image-banner {
+  /*   background-image: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/12/Wikipedia.jpg"); */
+  margin-top: 20px;
+  height: 180px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.separator {
+  border-color: #BDBDBD;
+  width: 70%;
+}
+
+.iframe-container {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  animation: expand 0.3s forwards;
+}
+
+@keyframes expand {
+  from {
+    height: 0;
+  }
+  to {
+    height: 350px;
+  }
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn-search:focus,
+.btn-search:active,
+.btn-search:active:focus {
+  outline: none;
+}
+
+.random-link {
+  font-family: 'Kalam', cursive;
+  font-size: 25px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.random-link:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.result {
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #BDBDBD;
+  box-shadow: 1px 2px 3px #333;
+}
+
+.thumb {
+  float: left;
+  margin: auto;
+  margin-top: 14px;
+  margin-right: 12px;
+  width: 50px;
+  height: 42px;
+  border-radius: 15%;
+}
+
+.summary {
+  margin-top: 12px;
+}
+
+.input-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+
+/* loading animation source : cssload.net */
+
+.cssload-fond {
+  position: relative;
+  height: 405px;
+  margin: auto;
+}
+
+.cssload-container-general {
+  margin-top: 120px;
+  animation: cssload-animball_two 1.15s infinite;
+  -o-animation: cssload-animball_two 1.15s infinite;
+  -ms-animation: cssload-animball_two 1.15s infinite;
+  -webkit-animation: cssload-animball_two 1.15s infinite;
+  -moz-animation: cssload-animball_two 1.15s infinite;
+  width: 43px;
+  height: 43px;
+}
+
+.cssload-internal {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+}
+
+.cssload-ballcolor {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+
+.cssload-ball_1,
+.cssload-ball_2,
+.cssload-ball_3,
+.cssload-ball_4 {
+  position: absolute;
+  animation: cssload-animball_one 1.15s infinite ease;
+  -o-animation: cssload-animball_one 1.15s infinite ease;
+  -ms-animation: cssload-animball_one 1.15s infinite ease;
+  -webkit-animation: cssload-animball_one 1.15s infinite ease;
+  -moz-animation: cssload-animball_one 1.15s infinite ease;
+}
+
+.cssload-ball_1 {
+  background-color: rgb(203, 32, 37);
+  top: 0;
+  left: 0;
+}
+
+.cssload-ball_2 {
+  background-color: rgb(248, 179, 52);
+  top: 0;
+  left: 23px;
+}
+
+.cssload-ball_3 {
+  background-color: rgb(0, 160, 150);
+  top: 23px;
+  left: 0;
+}
+
+.cssload-ball_4 {
+  background-color: rgb(151, 191, 13);
+  top: 23px;
+  left: 23px;
+}
+
+@keyframes cssload-animball_one {
+  0% {
+    position: absolute;
+  }
+  50% {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    position: absolute;
+  }
+}
+
+@-o-keyframes cssload-animball_one {
+  0% {
+    position: absolute;
+  }
+  50% {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    position: absolute;
+  }
+}
+
+@-ms-keyframes cssload-animball_one {
+  0% {
+    position: absolute;
+  }
+  50% {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    position: absolute;
+  }
+}
+
+@-webkit-keyframes cssload-animball_one {
+  0% {
+    position: absolute;
+  }
+  50% {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    position: absolute;
+  }
+}
+
+@-moz-keyframes cssload-animball_one {
+  0% {
+    position: absolute;
+  }
+  50% {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    opacity: 0.5;
+  }
+  100% {
+    position: absolute;
+  }
+}
+
+@keyframes cssload-animball_two {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+@-o-keyframes cssload-animball_two {
+  0% {
+    -o-transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -o-transform: rotate(360deg) scale(1.3);
+  }
+  100% {
+    -o-transform: rotate(720deg) scale(1);
+  }
+}
+
+@-ms-keyframes cssload-animball_two {
+  0% {
+    -ms-transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -ms-transform: rotate(360deg) scale(1.3);
+  }
+  100% {
+    -ms-transform: rotate(720deg) scale(1);
+  }
+}
+
+@-webkit-keyframes cssload-animball_two {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.3);
+  }
+  100% {
+    -webkit-transform: rotate(720deg) scale(1);
+  }
+}
+
+@-moz-keyframes cssload-animball_two {
+  0% {
+    -moz-transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -moz-transform: rotate(360deg) scale(1.3);
+  }
+  100% {
+    -moz-transform: rotate(720deg) scale(1);
+  }
+}

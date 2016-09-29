@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Wikipedia Viewer</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Kalam" rel="stylesheet">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="image-banner"></div>
+<div class="container-fluid">
+
+  <div class="input-group col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+    <input type="text" name="search" class="search form-control" placeholder="Search.." required>
+    <div class="input-group-btn">
+      <button class="btn btn-search btn-default"><i class="glyphicon glyphicon-search"></i></button>
+    </div>
+  </div>
+  <a href="https://en.m.wikipedia.org/wiki/Special:Random" target="iframe" class="random-link col-xs-10 col-xs-offset-1 text-center">Random Wikipedia Article</a><br>
+
+  <div class="iframe-container random hidden">
+    <iframe src="" class="iframe random hidden animated fadeIn col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" width="100%" height="350px" name="iframe"></iframe>
+    <div align="center" class="cssload-fond loading random hidden">
+      <div class="cssload-container-general">
+        <div class="cssload-internal">
+          <div class="cssload-ballcolor cssload-ball_1"> </div>
+        </div>
+        <div class="cssload-internal">
+          <div class="cssload-ballcolor cssload-ball_2"> </div>
+        </div>
+        <div class="cssload-internal">
+          <div class="cssload-ballcolor cssload-ball_3"> </div>
+        </div>
+        <div class="cssload-internal">
+          <div class="cssload-ballcolor cssload-ball_4"> </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <hr class="separator">
+  <div class="results-container col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+  </div>
+  <div align="center" class="cssload-fond loading-search hidden">
+    <div class="cssload-container-general">
+      <div class="cssload-internal">
+        <div class="cssload-ballcolor cssload-ball_1"> </div>
+      </div>
+      <div class="cssload-internal">
+        <div class="cssload-ballcolor cssload-ball_2"> </div>
+      </div>
+      <div class="cssload-internal">
+        <div class="cssload-ballcolor cssload-ball_3"> </div>
+      </div>
+      <div class="cssload-internal">
+        <div class="cssload-ballcolor cssload-ball_4"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>
